@@ -112,7 +112,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux="TERM=xterm-256color tmux"
 #alias godot-nvim="nvim --listen ./godothost ."
-alias godot-nvim="nvim --listen /tmp/godot"
+#alias godot-nvim="nvim --listen /tmp/godot"
+alias godot-nvim="nvim --listen ./server.pipe"
 #unity
 #alias unity-nvim="nvim --listen /tmp/unity"
 alias yay-clean="yay -Qtdq | yay -Rns -"
@@ -132,6 +133,11 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 export ANDROID_HOME=/opt/android-sdk
+
+# Add .NET Core SDK tools
+export PATH="$PATH:/home/coglialoro/.dotnet/tools"
+#psp
+export PATH="$PATH:/home/coglialoro/pop-fe"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
